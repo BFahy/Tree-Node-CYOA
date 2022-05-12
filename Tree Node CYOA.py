@@ -6,9 +6,11 @@ class TreeNode:
     self.story_piece = story_piece
     self.choices = []
 
+    # Function to add child to tree
   def add_child(self, node):
     self.choices.append(node)
 
+    # Logic for traversing tree and accepting user input
   def traverse(self):
     story_node = self
     print(story_node.story_piece)
@@ -85,9 +87,7 @@ choice_b.add_child(choice_b_2)
 
 user_choice = input("What is your name? ")
 print(user_choice)
-######
-# TESTING AREA
-######
+
 print("Once upon a time...")
 print(story_root.story_piece)
 story_root.traverse()
